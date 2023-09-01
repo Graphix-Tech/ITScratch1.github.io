@@ -12,25 +12,3 @@ function initializeScratchCard() {
 }
 
 initializeScratchCard();
-
-/*  // Function to retrieve query parameters from the URL
-function getQueryParam(name) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(name);
-}
-
-// Get the selected image index from the query parameter or generate a random one
-let selectedImageIndex = getQueryParam("imageIndex");
-if (!selectedImageIndex) {
-    const numImages = 1; // Number of available images
-    selectedImageIndex = Math.floor(Math.random() * numImages) + 1;
-}
-
-// Initialize the scratch card with the selected image index
-initializeScratchCard(selectedImageIndex);
-
-// Update the URL with the selected image index
-const currentURL = window.location.href.split("?")[0]; // Remove existing query parameters
-const updatedURL = `${currentURL}?imageIndex=${selectedImageIndex}`;
-window.history.replaceState({}, "", updatedURL);
-*/
