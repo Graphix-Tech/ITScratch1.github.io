@@ -1,7 +1,7 @@
-function initializeScratchCard(selectedImageIndex) {
+function initializeScratchCard() {
     $("#card").wScratchPad({
         size: 100, // The size of the brush/scratch.
-        bg: `Images/Gpay_Card ${selectedImageIndex}.jpg`, // Background image path.
+        bg: `Images/Gpay_Card 1.jpg`, // Background image path.
         fg: `Images/front.jpg`, // Foreground image path.
         cursor: "pointer", // Set cursor.
         scratchUp: function () {
@@ -11,7 +11,9 @@ function initializeScratchCard(selectedImageIndex) {
     });
 }
 
-// Function to retrieve query parameters from the URL
+initializeScratchCard();
+
+/*  // Function to retrieve query parameters from the URL
 function getQueryParam(name) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
@@ -31,3 +33,4 @@ initializeScratchCard(selectedImageIndex);
 const currentURL = window.location.href.split("?")[0]; // Remove existing query parameters
 const updatedURL = `${currentURL}?imageIndex=${selectedImageIndex}`;
 window.history.replaceState({}, "", updatedURL);
+*/
